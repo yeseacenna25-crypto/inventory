@@ -1,0 +1,2 @@
+DB: inventory_negrita
+Columns: order_id, customer_name, customer_contact, customer_address, customer_outlet, total_amount, status, order_notes, created_by, created_at, updated_at, distributor_id, handling_fee, final_total, user_type, points

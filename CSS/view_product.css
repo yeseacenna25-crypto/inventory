@@ -1,0 +1,111 @@
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-image {
+  width: 100%;
+  height: 150px;       /* Standardized height */
+  object-fit: cover;   /* Ensures it doesn't stretch, just fills */
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+
+.product-price {
+  color: green;
+  font-weight: bold;
+  margin-top: auto;
+}
+
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+
+/* ADD ORDER UI */
+
+.btn-dark {
+            background-color: #4CAF50;
+            color: white;
+            margin-right: 10px;
+        }
+        .btn-dark:hover {
+            background-color: #45a049;
+        }
+        .btn-danger {
+            background-color: #ff4d4d;
+            color: white;
+        }
+        .btn-danger:hover {
+            background-color: #ff1a1a;
+        }
+        .quantity-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .quantity-group button {
+            width: 30px;
+            height: 30px;
+            font-size: 16px;
+        }
+        .quantity-input {
+            width: 50px;
+            text-align: center;
+            margin: 0 5px;
+        }
+        .order-value {
+            font-weight: bold;
+            color: green;
+        }
+        .create-order-container {
+            text-align: right;
+            padding-top: 10px;
+        }
+        .action-buttons {
+            margin: 20px 0;
+        }
+
+        /* VIEW ORDER UI */
+        body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.badge.bg-danger {
+    background-color: #ff6b6b !important;
+}
+
+.badge.bg-warning {
+    background-color: #f1c40f !important;
+    color: black;
+}
+
+.badge.bg-success {
+    background-color: #2ecc71 !important;
+}
+
+.card-header, .card-footer {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .table th, .table td {
+        font-size: 12px;
+        padding: 0.3rem;
+    }
+
+    .modal-dialog {
+        max-width: 95%;
+    }
+}

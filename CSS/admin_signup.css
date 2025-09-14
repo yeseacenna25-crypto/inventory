@@ -1,0 +1,48 @@
+body {
+  background-color: #410101;
+  height: 100%;
+}
+
+form {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+}
+.bg {
+  background-color: rgb(255, 255, 255);
+}
+.btn-color {
+  width: 50%;
+  background-color: #410101;
+  border: none;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+input.form-control {
+   
+  margin-bottom: 10px;   
+    
+}
+
+.back-btn {
+  background-color: #410101;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.60rem; 
+}
+
+.back-btn:hover {
+  background-color: #773f3f;
+  color: #fff;
+}
+
+.small-dropdown {
+  background-color: #f5eaea;
+  border: 1px solid #b99b9b;
+  color: #410101;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  padding: 0.25rem 0.5rem;
+}
+

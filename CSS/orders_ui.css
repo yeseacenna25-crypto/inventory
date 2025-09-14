@@ -1,0 +1,383 @@
+/*VIEW ORDER UI */
+
+.search-container {
+            background: white;
+            border-radius: 15px;
+            padding: 1rem 1rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: -2rem !important;
+            margin-top: -7.3rem;
+            max-width: 600px;
+            margin-left: auto;
+        }
+        
+        .time-filter-tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 1rem;
+        }
+        
+        .time-filter-tab {
+            padding: 6px 16px;
+            border: 1px solid #e9ecef;
+            border-radius: 6px;
+            background: white;
+            color: #6c757d;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        
+        .time-filter-tab:hover, .time-filter-tab.active {
+            background: #f8f9fa;
+            color: #333;
+            border-color: #dee2e6;
+            text-decoration: none;
+        }
+        
+        .date-filter-row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            color: #6c757d;
+
+        }
+        
+        .date-input-group {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #6c757d;
+
+        }
+        
+        .date-input {
+            border: 1px solid #e9ecef;
+            border-radius: 6px;
+            padding: 6px 12px;
+            font-size: 14px;
+            width: 150px;
+            color: #333;
+
+        }
+        
+        .date-input:focus {
+            border-color: #6a0000;
+            outline: none;
+            box-shadow: 0 0 0 0.1rem rgba(106, 0, 0, 0.15);
+        }
+        
+        .filter-btn {
+            padding: 6px 16px;
+            border: 1px solid #007bff;
+            border-radius: 6px;
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .filter-btn:hover {
+            background: #0056b3;
+            border-color: #0056b3;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .clear-btn {
+            padding: 6px 16px;
+            border: 1px solid #6c757d;
+            border-radius: 6px;
+            background: white;
+            color: #6c757d;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .clear-btn:hover {
+            background: #6c757d;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .search-input {
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            padding: 12px 20px 12px 50px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: none;
+        }
+        
+        .search-input:focus {
+            border-color: #6a0000;
+            box-shadow: 0 0 0 0.2rem rgba(106, 0, 0, 0.15);
+            outline: none;
+        }
+        
+        .search-icon {
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #6c757d;
+            font-size: 18px;
+        }
+        
+        @media (max-width: 768px) {
+            .time-filter-tabs {
+                flex-wrap: wrap;
+            }
+        }
+
+        /* List Style for Orders */
+        .orders-list {
+            display: block;
+            gap: 0;
+        }
+        
+        .order-item {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e9ecef;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .order-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .order-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background: #e9ecef;
+        }
+        
+        .order-item.pending::before { background: #ffc107; }
+        .order-item.processing::before { background: #0d6efd; }
+        .order-item.completed::before { background: #198754; }
+        .order-item.cancelled::before { background: #dc3545; }
+        
+        .order-left {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            flex: 1;
+        }
+        
+        .order-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .order-id {
+            font-size: 16px;
+            font-weight: bold;
+            color: #6a0000;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            min-width: 120px;
+        }
+        
+        .customer-info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            min-width: 200px;
+        }
+        
+        .customer-name {
+            font-size: 15px;
+            color: #333;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .customer-contact {
+            font-size: 13px;
+            color: #6c757d;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .order-amount {
+            background: #f8f9fa;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            border-left: 3px solid #198754;
+            color: #198754;
+            font-weight: bold;
+            font-size: 15px;
+            text-align: center;
+            min-width: 120px;
+        }
+        
+        .order-status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            min-width: 100px;
+            justify-content: center;
+        }
+        
+        .order-status.pending { background: #fff3cd; color: #856404; }
+        .order-status.processing { background: #cff4fc; color: #055160; }
+        .order-status.completed { background: #d1e7dd; color: #0f5132; }
+        .order-status.cancelled { background: #f8d7da; color: #721c24; }
+        
+        .order-date {
+            font-size: 13px;
+            color: #6c757d;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2px;
+            min-width: 120px;
+            text-align: left;
+        }
+        
+        .order-date small {
+            font-size: 11px;
+            margin-top: 2px;
+        }
+        
+        .order-actions {
+            display: flex;
+            gap: 8px;
+        }
+        
+        .action-btn {
+            padding: 6px 12px;
+            border: none;
+            border-radius: 6px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .action-btn.view {
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+        
+        .action-btn.edit {
+            background: #fff3e0;
+            color: #f57c00;
+        }
+        
+        .action-btn:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+        
+        @media (max-width: 768px) {
+            .order-item {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 1rem;
+            }
+            
+            .order-left, .order-right {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0.5rem;
+            }
+            
+            .customer-info, .order-id, .order-date {
+                min-width: auto;
+            }
+        }
+
+ 
+        .status-filter-group {
+            display: flex;
+            align-items: center;
+        }
+        
+        .status-filter {
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 14px;
+            background: white;
+            color: #495057;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 120px;
+        }
+        
+        .status-filter:focus {
+            border-color: #6a0000;
+            box-shadow: 0 0 0 0.2rem rgba(106, 0, 0, 0.15);
+            outline: none;
+        }
+        
+        .status-filter:hover {
+            border-color: #6a0000;
+        }
+        
+        .date-filter-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        @media (max-width: 768px) {
+            .date-filter-row {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 8px;
+            }
+            
+            .status-filter {
+                min-width: auto;
+                width: 100%;
+            }
+        }
+  
+
+
+

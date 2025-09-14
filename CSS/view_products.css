@@ -1,0 +1,238 @@
+/* Product Cards Styling */
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-img-container {
+    background-color: #f8f9fa;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-text {
+    color: #6c757d;
+    font-size: 0.9rem;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.card-footer {
+    padding: 15px;
+}
+
+.add-to-cart-btn {
+    transition: all 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #5e0202;
+    color: white;
+    border-color: #5e0202;
+}
+
+/* Badges */
+.badge {
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+/* Search and Filter */
+#searchInput:focus {
+    box-shadow: none;
+    border-color: #410101;
+}
+
+.btn-outline-primary {
+    color: #410101;
+    border-color: #410101;
+}
+
+.btn-outline-primary:hover {
+    background-color: #410101;
+    border-color: #410101;
+}
+
+.btn-primary {
+    background-color: #410101;
+    border-color: #410101;
+}
+
+.btn-primary:hover {
+    background-color: #5e0202;
+    border-color: #5e0202;
+}
+
+.text-primary {
+    color: #410101 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .col-md-4 {
+        margin-bottom: 20px;
+    }
+}
+
+/* Edit Product Page Styling */
+.edit-product-container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.edit-product-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    margin-left: 16px;
+    margin-right: 16px;
+    overflow: hidden;
+}
+
+.edit-product-card .card-header {
+    background: linear-gradient(135deg, #410101, #5e0202);
+    color: #fff;
+    padding: 20px 25px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border: none;
+}
+
+.edit-product-card .card-header h4 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.edit-product-card .btn-secondary {
+    background: #748DAE;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.edit-product-card .btn-secondary:hover {
+    background: #5e7092;
+    transform: translateY(-1px);
+}
+
+.edit-product-card .card-body {
+    padding: 30px 25px;
+}
+
+.edit-product-card .form-group {
+    margin-bottom: 20px;
+}
+
+.edit-product-card label {
+    font-weight: 600;
+    color: #410101;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    display: block;
+}
+
+.edit-product-card .form-control {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+}
+
+.edit-product-card .form-control:hover {
+    border-color: #A34343;
+    background: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(163, 67, 67, 0.1);
+}
+
+.edit-product-card .form-control:focus {
+    border-color: #410101;
+    box-shadow: 0 0 0 0.2rem rgba(65, 1, 1, 0.15);
+    background: #fff;
+}
+
+.edit-product-card .btn-success {
+    background: linear-gradient(135deg, #A34343, #410101);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.edit-product-card .btn-success:hover {
+    background: linear-gradient(135deg, #410101, #A34343);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(65, 1, 1, 0.3);
+}
+
+.edit-product-card .error-message {
+    color: #dc3545;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 6px;
+}
+
+/* Mobile responsive for edit product */
+@media (max-width: 576px) {
+    .edit-product-container {
+        margin: 15px auto;
+        padding: 0 10px;
+    }
+    
+    .edit-product-card {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    
+    .edit-product-card .card-header {
+        padding: 15px 20px;
+        font-size: 1.1rem;
+    }
+    
+    .edit-product-card .card-body {
+        padding: 20px 15px;
+    }
+    
+    .edit-product-card .btn-secondary {
+        padding: 6px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+
+

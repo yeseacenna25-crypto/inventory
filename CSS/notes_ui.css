@@ -1,0 +1,248 @@
+.page-subtitle {
+            color: #6c757d;
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+        
+        .search-container {
+            background: white;
+            border-radius: 15px;
+            padding: 1rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+            margin-top: -6rem;
+        }
+        
+        .search-input {
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            padding: 12px 20px 12px 50px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: none;
+        }
+        
+        .search-input:focus {
+            border-color: #6a0000;
+            box-shadow: 0 0 0 0.2rem rgba(106, 0, 0, 0.15);
+            outline: none;
+        }
+        
+        .search-icon {
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #6c757d;
+            font-size: 18px;
+        }
+        
+        .filter-tabs {
+            display: flex;
+            gap: 10px;
+            margin-top: 0.68rem;
+        }
+        
+        .filter-tab {
+            padding: 8px 8px;
+            border: 2px solid #e9ecef;
+            border-radius: 25px;
+            background: white;
+            color: #6c757d;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .filter-tab:hover, .filter-tab.active {
+            background: #6a0000;
+            color: white;
+            border-color: #6a0000;
+        }
+        
+        .notes-grid {
+            display: block;
+            gap: 0;
+        }
+        
+        .note-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e9ecef;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .note-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background: #e9ecef;
+        }
+        
+        .note-left {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            flex: 1;
+        }
+        
+        .note-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .order-id {
+            font-size: 16px;
+            font-weight: bold;
+            color: #6a0000;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            min-width: 120px;
+        }
+        
+        .customer-name {
+            font-size: 15px;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            min-width: 150px;
+        }
+        
+        .note-text {
+            background: #f8f9fa;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            border-left: 3px solid #6a0000;
+            font-style: italic;
+            color: #555;
+            line-height: 1.4;
+            flex: 1;
+            margin: 0 1rem;
+            max-width: 300px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
+        .order-date {
+            font-size: 13px;
+            color: #6c757d;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            min-width: 100px;
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: #6c757d;
+        }
+        
+        .no-results i {
+            font-size: 4rem;
+            color: #dee2e6;
+            margin-bottom: 1rem;
+        }
+        
+        .no-results h4 {
+            color: #495057;
+            margin-bottom: 0.5rem;
+        }
+        
+        .pagination-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .pagination-info {
+            color: #6c757d;
+            font-size: 14px;
+        }
+        
+        .pagination-nav {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        
+        .pagination-btn {
+            padding: 8px 16px;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            background: white;
+            color: #495057;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .pagination-btn:hover {
+            background: #f8f9fa;
+            border-color: #6a0000;
+            color: #6a0000;
+            text-decoration: none;
+        }
+        
+        .pagination-btn.active {
+            background: #6a0000;
+            border-color: #6a0000;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .note-card {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 1rem;
+            }
+            
+            .note-left, .note-right {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0.5rem;
+            }
+            
+            .note-text {
+                margin: 0;
+                max-width: none;
+                white-space: normal;
+            }
+            
+            .order-id, .customer-name, .order-date {
+                min-width: auto;
+            }
+            
+            .filter-tabs {
+                flex-wrap: wrap;
+            }
+            
+            .pagination-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
