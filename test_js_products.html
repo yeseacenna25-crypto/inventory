@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Product Selection</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <h2>Test Product Selection JavaScript</h2>
+    <button onclick="testFetchProducts()">Test Fetch Products</button>
+    <div id="results"></div>
+
+    <script>
+    function testFetchProducts() {
+        console.log('Testing fetch products...');
+        
+        fetch('fetch_products.php')
+            .then(response => {
+                console.log('Response status:', response.status);
+                console.log('Response headers:', response.headers);
+                return response.text(); // Get as text first to see raw response
+            })
+            .then(text => {
+                console.log('Raw response:', text);
+                document.getElementById('results').innerHTML = '<h3>Raw Response:</h3><pre>' + text + '</pre>';
+                
+                try {
+                    const data = JSON.parse(text);
+                    console.log('Parsed data:', data);
+                    
+                    if (data.success && data.products) {
+                        console.log('Products found:', data.products.length);
+                        
+                        // Test the first product
+                        if (data.products.length > 0) {
+                            const product = data.products[0];
+                            console.log('Testing first product:', product);
+                            
+                            // Test the same validation as in selectProduct
+                            const productId = product.id;
+                            const productName = product.name;
+                            const productPrice = parseFloat(product.price_raw);
+                            
+                            console.log('Validation test:');
+                            console.log('productId:', productId, 'type:', typeof productId, 'truthy:', !!productId);
+                            console.log('productName:', productName, 'type:', typeof productName, 'truthy:', !!productName);
+                            console.log('productPrice:', productPrice, 'type:', typeof productPrice, 'truthy:', !!productPrice, 'isNaN:', isNaN(productPrice));
+                            
+                            if (!productId || !productName || !productPrice || isNaN(productPrice)) {
+                                console.error('Validation failed!');
+                                console.log('Raw price_raw value:', product.price_raw, 'type:', typeof product.price_raw);
+                                Swal.fire({
+                                    icon: 'error',
+                                    title: 'Error',
+                                    text: 'Invalid product data detected!'
+                                });
+                            } else {
+                                console.log('Validation passed!');
+                                Swal.fire({
+                                    icon: 'success',
+                                    title: 'Success',
+                                    text: 'Product data is valid!'
+                                });
+                            }
+                        }
+                    }
+                } catch (e) {
+                    console.error('JSON parse error:', e);
+                    document.getElementById('results').innerHTML += '<h3>JSON Parse Error:</h3><pre>' + e.message + '</pre>';
+                }
+            })
+            .catch(error => {
+                console.error('Fetch error:', error);
+                document.getElementById('results').innerHTML = '<h3>Fetch Error:</h3><pre>' + error.message + '</pre>';
+            });
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+ALTER TABLE orders ADD COLUMN order_notes TEXT AFTER order_date;

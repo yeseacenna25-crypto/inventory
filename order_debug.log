@@ -1,0 +1,182 @@
+
+==== NEW REQUEST ====
+Session: {"captcha":"FQR3GL","admin_id":3}
+Raw Input: {"customer_name":"Jillian Labitoria Gomez","customer_contact":"09321587425","customer_address":"San Fabian","items":[{"product_id":"5","product_name":"Ewan","quantity":1,"unit_price":12}]}
+Starting transaction
+Order created successfully: 9
+
+==== NEW REQUEST ====
+Session: {"captcha":"4BYF32","admin_id":16}
+Raw Input: {"customer_name":"Enna Coma Abana","customer_contact":"09975922996","customer_address":"Angoluan Echague Isabela","items":[{"product_id":"2","product_name":"Negrita Papaya Soap","quantity":2,"unit_price":100}]}
+Starting transaction
+Insufficient stock for product: 2 (Available: 1, Requested: 2)
+Exception: Insufficient stock for product: Negrita Papaya Soap (Available: 1, Requested: 2)
+
+==== NEW REQUEST ====
+Session: {"captcha":"4BYF32","admin_id":16}
+Raw Input: {"customer_name":"Enna Coma Abana","customer_contact":"09975922996","customer_address":"Angoluan Echague Isabela","items":[{"product_id":"2","product_name":"Negrita Papaya Soap","quantity":1,"unit_price":100}]}
+Starting transaction
+Order created successfully: 2
+
+==== NEW REQUEST ====
+Session: {"captcha":"4BYF32","admin_id":16}
+Raw Input: {"customer_name":"Enna Coma Abana","customer_contact":"09975922996","customer_address":"Angoluan Echague Isabela","items":[{"product_id":"4","product_name":"test","quantity":5,"unit_price":80}]}
+Starting transaction
+Order created successfully: 3
+
+==== NEW REQUEST ====
+Session: {"captcha":"4BYF32","admin_id":16}
+Raw Input: {"customer_name":"Enna Coma Abana","customer_contact":"09975922996","customer_address":"Angoluan Echague Isabela","items":[{"product_id":"4","product_name":"test","quantity":2,"unit_price":80},{"product_id":"5","product_name":"test","quantity":4,"unit_price":20},{"product_id":"6","product_name":"TEST 3","quantity":4,"unit_price":50}]}
+Starting transaction
+Order created successfully: 4
+
+==== NEW REQUEST ====
+Session: {"captcha":"A3Z6M7","admin_id":1}
+Raw Input: {"customer_name":"Caesey Benigno Labitoria","customer_contact":"09369852147","customer_address":"San Fabian","items":[{"product_id":"3","product_name":"Badge","quantity":100,"unit_price":1000}]}
+Starting transaction
+Order created successfully: 3
+
+==== NEW REQUEST ====
+Session: {"captcha":"A3Z6M7","admin_id":1}
+Raw Input: {"customer_name":"Jillian Labitoria Gomez","customer_contact":"09321587425","customer_address":"San Fabian Echague Isabela","items":[{"product_id":"2","product_name":"Badge","quantity":10,"unit_price":100}]}
+Starting transaction
+Order created successfully: 4
+
+==== NEW REQUEST ====
+Session: {"captcha":"A3Z6M7","admin_id":1}
+Raw Input: {"customer_name":"Melanie Dame Gurr","customer_contact":"09846318958","customer_address":"Angadanan","items":[{"product_id":"1","product_name":"Badge","quantity":100,"unit_price":100}]}
+Starting transaction
+Order created successfully: 5
+
+==== NEW REQUEST ====
+Session: {"captcha":"A3Z6M7","admin_id":1}
+Raw Input: {"customer_name":"Melanie Dame Gurr","customer_contact":"09354169424","customer_address":"skjdhas","items":[{"product_id":"2","product_name":"Badge","quantity":1000,"unit_price":100}]}
+Starting transaction
+Insufficient stock for product: 2 (Available: 980, Requested: 1000)
+Exception: Insufficient stock for product: Badge (Available: 980, Requested: 1000)
+
+==== NEW REQUEST ====
+Session: {"captcha":"A3Z6M7","admin_id":1}
+Raw Input: {"customer_name":"Melanie Dame Gurr","customer_contact":"09354169424","customer_address":"skjdhas","items":[{"product_id":"2","product_name":"Badge","quantity":100,"unit_price":100}]}
+Starting transaction
+Order created successfully: 7
+
+==== NEW REQUEST ====
+Session: {"captcha":"TYX78Z","admin_id":16}
+Raw Input: {"customer_name":"Anne Coma Canapi","customer_contact":"09975922996","customer_address":"Iguig Cagayan","items":[{"product_id":"6","product_name":"TEST 3","quantity":1,"unit_price":50}]}
+Starting transaction
+Order created successfully: 5
+
+==== NEW REQUEST ====
+Session: {"captcha_code":"yymQkx","admin_id":1}
+Raw Input: {"customer_name":"Eva Le Queen","customer_contact":"09358745998","customer_address":"Quezon City","items":[{"product_id":"0","product_name":"Soap","quantity":10,"unit_price":100}]}
+Starting transaction
+Order created successfully: 0
+
+==== NEW REQUEST ====
+Session: {"captcha_code":"VcnwuM","admin_id":1,"distributor_id":"3","distrib_username":"maxie"}
+Raw Input: {"customer_name":"Jhayvot Maxie Galang III","customer_contact":"09358745994","customer_address":"Quezon City","items":[{"product_id":"2","product_name":"Collagen Coffee","quantity":5,"unit_price":450}]}
+Starting transaction
+Exception: Unknown column 'points' in 'field list'
+
+==== NEW REQUEST ====
+Session: {"captcha_code":"VcnwuM","admin_id":1,"distributor_id":"3","distrib_username":"maxie"}
+Raw Input: {"customer_name":"Jhayvot Maxie Galang III","customer_contact":"09358745994","customer_address":"Quezon City","items":[{"product_id":"2","product_name":"Collagen Coffee","quantity":4,"unit_price":450}]}
+Starting transaction
+Exception: Unknown column 'points' in 'field list'
+
+==== NEW REQUEST ====
+Session: {"captcha_code":"VcnwuM","admin_id":1,"distributor_id":"3","distrib_username":"maxie"}
+Raw Input: {"customer_name":"Jhayvot Maxie Galang III","customer_contact":"09358745994","customer_address":"Quezon City","items":[{"product_id":"2","product_name":"Collagen Coffee","quantity":4,"unit_price":450}]}
+Starting transaction
+Exception: Unknown column 'points' in 'field list'
+
+==== NEW REQUEST ====
+Session: {"captcha_code":"VcnwuM","admin_id":1,"distributor_id":"3","distrib_username":"maxie"}
+Raw Input: {"customer_name":"Jhayvot Maxie Galang III","customer_contact":"09358745994","customer_address":"Quezon City","items":[{"product_id":"2","product_name":"Collagen Coffee","quantity":4,"unit_price":450}]}
+Starting transaction
+Exception: Unknown column 'points' in 'field list'
+
+==== NEW REQUEST ====
+Session: {"captcha_code":"VcnwuM","admin_id":1,"distributor_id":"3","distrib_username":"maxie"}
+Raw Input: {"customer_name":"Jhayvot Maxie Galang III","customer_contact":"09358745994","customer_address":"Quezon City","items":[{"product_id":"2","product_name":"Collagen Coffee","quantity":3,"unit_price":450}]}
+Starting transaction
+Exception: Unknown column 'points' in 'field list'
+
+==== NEW REQUEST ====
+Session: {"captcha_code":"VcnwuM","admin_id":1,"distributor_id":"3","distrib_username":"maxie"}
+Raw Input: {"customer_name":"Jhayvot Maxie Galang III","customer_contact":"09358745994","customer_address":"Quezon City","items":[{"product_id":"2","product_name":"Collagen Coffee","quantity":1,"unit_price":450}]}
+Starting transaction
+Exception: Unknown column 'points' in 'field list'
+
+==== NEW REQUEST ====
+Session: {"captcha_code":"VcnwuM","admin_id":1,"distributor_id":"3","distrib_username":"maxie"}
+Raw Input: {"customer_name":"Jhayvot Maxie Galang III","customer_contact":"09358745994","customer_address":"Quezon City","items":[{"product_id":"2","product_name":"Collagen Coffee","quantity":1,"unit_price":450}]}
+Starting transaction
+Exception: Unknown column 'points' in 'field list'
+
+==== NEW REQUEST ====
+Session: {"captcha_code":"VcnwuM","admin_id":1,"distributor_id":"3","distrib_username":"maxie"}
+Raw Input: {"customer_name":"Jhayvot Maxie Galang III","customer_contact":"09358745994","customer_address":"Quezon City","items":[{"product_id":"2","product_name":"Collagen Coffee","quantity":1,"unit_price":450}]}
+Starting transaction
+Exception: Unknown column 'points' in 'field list'
+
+==== NEW REQUEST ====
+Session: {"captcha_code":"VcnwuM","admin_id":1,"distributor_id":"3","distrib_username":"maxie"}
+Raw Input: {"customer_name":"Jhayvot Maxie Galang III","customer_contact":"09358745994","customer_address":"Quezon City","items":[{"product_id":"2","product_name":"Collagen Coffee","quantity":1,"unit_price":450}]}
+Starting transaction
+Exception: Unknown column 'points' in 'field list'
+
+==== NEW REQUEST ====
+Session: {"captcha_code":"VcnwuM","admin_id":1,"distributor_id":"3","distrib_username":"maxie"}
+Raw Input: {"customer_name":"Angel Amliw Galang","customer_contact":"09358745995","customer_address":"Quezon City","items":[{"product_id":"2","product_name":"Collagen Coffee","quantity":1,"unit_price":450}]}
+Starting transaction
+Exception: Unknown column 'points' in 'field list'
+
+==== NEW REQUEST ====
+Session: {"captcha_code":"FtVATv","distributor_id":"3","distrib_username":"maxie","admin_id":1}
+Raw Input: {"customer_name":"Eva Le Queen","customer_contact":"09358745998","customer_address":"Quezon City","items":[{"product_id":"2","product_name":"Collagen Coffee","quantity":1,"unit_price":450}]}
+Starting transaction
+Exception: Unknown column 'points' in 'field list'
+
+==== NEW REQUEST ====
+Session: {"captcha_code":"FtVATv","distributor_id":"3","distrib_username":"maxie","admin_id":1}
+Raw Input: {"customer_name":"Eva Le Queen","customer_contact":"09358745998","customer_address":"Quezon City","items":[{"product_id":"2","product_name":"Collagen Coffee","quantity":21,"unit_price":450},{"product_id":"5","product_name":"Negrita Gluta Papaya Soap","quantity":12,"unit_price":350}]}
+Starting transaction
+Order created successfully: 32
+
+==== NEW REQUEST ====
+Session: {"captcha_code":"FtVATv","distributor_id":"3","distrib_username":"maxie","admin_id":1}
+Raw Input: {"customer_name":"Eva Le Queen","customer_contact":"09358745998","customer_address":"Quezon City","items":[{"product_id":"2","product_name":"Collagen Coffee","quantity":1,"unit_price":450},{"product_id":"5","product_name":"Negrita Gluta Papaya Soap","quantity":1,"unit_price":350}]}
+Starting transaction
+Order created successfully: 33
+
+==== NEW REQUEST ====
+Session: {"captcha_code":"FtVATv","distributor_id":"3","distrib_username":"maxie","admin_id":1}
+Raw Input: {"customer_name":"Angel Amliw Galang","customer_contact":"09358745995","customer_address":"Quezon City","items":[{"product_id":"5","product_name":"Negrita Gluta Papaya Soap","quantity":100,"unit_price":350}]}
+Starting transaction
+Order created successfully: 34
+
+==== NEW REQUEST ====
+Session: {"captcha_code":"FtVATv","distributor_id":"3","distrib_username":"maxie","admin_id":1}
+Raw Input: {"customer_name":"Eva Le Queen","customer_contact":"09358745998","customer_address":"Quezon City","items":[{"product_id":"2","product_name":"Collagen Coffee","quantity":1,"unit_price":450}]}
+Starting transaction
+Order created successfully: 35
+
+==== NEW REQUEST ====
+Session: {"captcha_code":"FtVATv","distributor_id":"3","distrib_username":"maxie","admin_id":1}
+Raw Input: {"customer_name":"Angel Amliw Galang","customer_contact":"09358745995","customer_address":"Quezon City","items":[{"product_id":"5","product_name":"Negrita Gluta Papaya Soap","quantity":1,"unit_price":350}]}
+Starting transaction
+Order created successfully: 36
+
+==== NEW REQUEST ====
+Session: {"captcha_code":"FtVATv","distributor_id":"3","distrib_username":"maxie","admin_id":1}
+Raw Input: {"customer_name":"Angel Amliw Galang","customer_contact":"09358745995","customer_address":"Quezon City","distributor_id":null,"items":[{"product_id":"5","product_name":"Negrita Gluta Papaya Soap","quantity":1,"unit_price":350}]}
+Starting transaction
+Order created successfully: 37
+
+==== NEW REQUEST ====
+Session: {"captcha_code":"tBAqFT","admin_id":15,"distributor_id":"6","distrib_username":"prei12345"}
+Raw Input: {"customer_name":"Anne Coma Abana","customer_contact":"09979767428","customer_address":"Quezon City","distributor_id":null,"items":[{"product_id":"2","product_name":"Collagen Coffee","quantity":1,"unit_price":450}]}
+Starting transaction
+Order created successfully: 45
